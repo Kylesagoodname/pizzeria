@@ -1,0 +1,182 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
+@import url(reset.css);
+
+
+body {
+    background-image: url(../img/wild_oliva.png);
+    font-family: 'calibri', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+}
+
+.headcontent {
+	width: 60%;
+	margin: 0 auto;
+	background-image: url(../img/pizzapic.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border: thin solid white;
+}
+
+.description {
+	font-style: italic;
+	font-size: 26px;
+	color: white;
+	margin: 0 auto;
+	border-top: thin dotted white;
+	
+
+}
+
+h1 {
+	color: white;
+	padding: 1em;
+	text-align: center;
+	font-family: 'Verdana';
+	font-weight: bold; 
+	font-size: 80px;
+
+}
+
+div {
+	background-image: url(../img/maze.png);
+	margin: 0 auto;
+	width: 60%;
+
+}
+nav ul {	
+	border-radius: 5px;
+	width: 70%;
+	margin: 0 auto;
+
+
+}
+
+nav li {
+	display: inline-block;
+
+}
+
+nav a {
+	display: inline-block;
+
+	padding: 10px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 80%;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: gray;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 15px;
+	margin-left: 15px;
+
+}
+.main {
+	border: thin solid white;
+}
+
+.link {
+	font-family: 'calibri';
+	color: black;
+	font-weight: bold;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+footer {
+	margin-top: 200px;
+	background-color: #A9A9A9;
+	color: white;
+	font-weight: bold;
+	border: thin solid white;
+}
+
+.email {
+	width: 50px;
+	height: 50px;
+	float: left;
+	padding-right: 5px;
+	margin-top: 
+}
+
+.twitter {
+	width: 50px;
+	height: 50px;
+	float: left;
+	padding-right: 5px;
+	
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 150%;
+	margin-left: 15px;
+
+}
+
+dt {
+	margin-left: 15px;
+	text-decoration: underline;
+}
+
+dd {
+	margin-bottom: 15px;
+}
+
+.menu {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.about {
+	font-size: 180%;
+	font-weight: bold;
+	color: gray;
+
+
+}
+
+aside {
+	background-color: #BA55D3;
+	border: thin solid white;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 15px;
+
+}
+
+.pizza {
+	float: left;
+	height: 300px;
+	width: 500px;
+	margin: 15px;
+}
+
+.line {
+	font-weight: bold;
+	color: red;	
+	
+}
+
+.counter {
+	float: right;
+	width: 500px;
+	height: 300px;
+	border: medium solid black;
+	margin-right: 15px;
+}
