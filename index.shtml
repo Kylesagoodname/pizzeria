@@ -12,40 +12,37 @@
 			<link rel="shortcut icon" href="img/logo.png">
 	</head>
 	<body>
-		
 		<!--#include virtual="inc/header.html" -->
 
 		<div class="container">
+			
+			<iframe width="60%" height="100%" src="//www.youtube.com/embed/HWL__9yDu8I" frameborder="0" allowfullscreen></iframe>
 			<p>Check out this video if you're interested in our pizza making process!</p>
-			
-			<!--<iframe width="30%" height="20%" src="//www.youtube.com/embed/HWL__9yDu8I" frameborder="0" allowfullscreen></iframe>-->
-
-
 		
-
 			
-
+		
 			<address>
 			  <strong>Dawg Pizza</strong><br>
 			  <p><a href="https://www.google.com/maps/preview#!q=4306+University+Way+NE%2C+Seattle%2C+WA+98105&data=!4m15!2m14!1m13!1s0x5490148b39e7e851%3A0x47f43ebdd6cf2dfe!3m8!1m3!1d182450!2d-122.3420645!3d47.6130284!3m2!1i1745!2i814!4f13.1!4m2!3d47.6600368!4d-122.3128467"> 4306 University Way NE<br>
 			  Seattle, WA 98105<br></a></p>
-			  <abbr title="Phone">P:</abbr> (206)-555-1212
+			  <abbr title="Phone">Phone:</abbr> (206)-555-1212
 			</address>
 
 			<p><strong>Our business hours:</strong> 10:00am to 11:00pm </p>
 
 			<p><strong>Days of Operation:</strong> Monday through Saturday.</p>
-
-			<p> <img class="icon" src="img/email.png" alt="A picture of an email icon"><a href="mailto:(dawgpizzaseattle@gmail.com)">Email Us</a></p>
-
-			<p><img class="icon" src="img/twitter.png" alt="A picture of a twitter icon"><a href="https://twitter.com/dawgpizza">Link to our Twitter feed! @DawgPizzaSea!</a></p>
-			
-			</div>
-
-			<!--#include virtual="inc/footer.html" -->
 		
-	
 
+			<div class="media">
+				<p> <img class="icon" src="img/email.png" alt="A picture of an email icon"><a href="mailto:(dawgpizzaseattle@gmail.com)" class="link">Email Us</a></p>
+
+				<p><img class="icon" src="img/twitter.png" alt="A picture of a twitter icon"><a href="https://twitter.com/dawgpizza" class="link">Link to our Twitter feed!</a></p>
+			</div>
+			
+		</div>
+			
+			<!--#include virtual="inc/footer.html" -->
+	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	</body>

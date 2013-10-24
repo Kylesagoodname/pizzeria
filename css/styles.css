@@ -9,13 +9,54 @@ body {
     padding: 10px;
 }
 
-.logo {
-	height: 7%;
-	width: 7%;
+
+.link {
+	color: white;
 }
+.logo {
+	height: 5%;
+	width: 5%;
+	
+}
+
+.logo:hover {
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);  
+}
+
+.navbar {
+	background-color: #C0C0C0;
+	border: thin solid white;
+	width: 60%;
+	margin: 0 auto;
+	border-radius: 2px;
+
+}
+
+iframe {
+	margin-left: 20%;
+}
+.navbar-fixed-bottom {
+	background-color: #A9A9A9;
+	color: black;
+	font-weight: bold;
+	border: thin solid white;
+	font-size: 75%;
+
+}
+
+.container {
+    overflow: hidden;
+    padding-bottom: 90px;
+}
+
 
 .headcontent {
 	width: 60%;
+	margin-top: 20px;
 	margin: 0 auto;
 	background-image: url(../img/pizzapic.jpg);
 	background-size: 100%;
@@ -26,7 +67,8 @@ body {
 
 .description {
 	font-style: italic;
-	font-size: 60%;
+	font-weight: bold;
+	font-size: 75%;
 	color: white;
 	margin: 0 auto;
 	border-top: thin dotted white;
@@ -35,7 +77,8 @@ body {
 }
 
 h1 {
-	color: purple;
+	color: #222;
+	text-shadow: 0px 2px 3px #555;
 	padding: 1em;
 	text-align: center;
 	font-family: 'Verdana';
@@ -45,42 +88,31 @@ h1 {
 
 }
 
-div {
+.container {
 	background-image: url(../img/maze.png);
 	margin: 0 auto;
 	width: 60%;
 
 }
-nav ul {	
-	border-radius: 5px;
-	width: 70%;
-	margin: 0 auto;
 
-
-}
-
-nav li {
-	display: inline-block;
-
-}
-
-nav a {
-	display: inline-block;
+.navbar a {
+	
 	padding: 10px;
 	color: #FFF;
+
 	font-weight: bold;
 	font-size: 80%;
 	text-decoration: none;
+
 }
 
-nav a:hover {
-	background-color: gray;
-}
-
-
-a:hover {
-	text-decoration: underline;
+.navbar a:hover {
 	
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
 }
 
 p {
@@ -88,24 +120,6 @@ p {
 	margin-left: 15px;
 	margin-right: 15px;
 
-}
-
-
-.link {
-	color: black;
-	font-weight: bold;
-	font-size: 90%;
-	text-decoration: none;
-}
-
-footer {
-	width: 60%;
-	margin: 0 auto;
-	background-color: #A9A9A9;
-	color: white;
-	font-weight: bold;
-	border: thin solid white;
-	font-size: 75%;
 }
 
 .icon {
@@ -171,9 +185,9 @@ aside {
 
 .counter {
 	
-	width: 100%;
-	height: 100%;
-
+	width: 25%;
+	height: 15%;
+	float: right;
 	border: medium solid black;
 	margin-right: 15px;
 }
@@ -187,6 +201,13 @@ address {
 	background-color: #FFF700;
 }
 
+.media {
+	background-color: #3090C7;
+	border: thick solid #1569C7;
+	border-radius: 10px;
+
+}
+
 /*defines styles for mobile screens*/
 @media screen and (max-width: 767px) {
   		.headcontent {
@@ -194,7 +215,18 @@ address {
   		}
 
   		body {
-  			font-size: 20px;
+  			font-size: 15px;
   		}
+
+  		.navbar-fixed-top {
+  			width: 10%;
+  			position: absolute;
+  			margin-left: 2px;
+  		}
+
+  		.container {
+  			width: 80%;
+  		}
+
    }
 }
