@@ -12,24 +12,14 @@
 			<link rel="shortcut icon" href="img/logo.png">
 	</head>
 	<body>
-		<a href="index.html"> <img class="logo" src="img/logo.png" alt="A picture of the dawg pizza logo"> </a>
-		<nav> 
-				<ul>
-					<li><a href="index.html">Home</a> </li>
-					<li><a href="menu.html">Menu</a> </li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="jobs.html">Jobs</a></li>
-				</ul>
-			</nav>
-		<div class="headcontent">
-			<h1>DAWG PIZZA</h1>
-			<p class="description">"Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!"</p>
-		</div>
 		
+		<!--#include virtual="inc/header.html" -->
+
 		<div class="container">
 			<p>Check out this video if you're interested in our pizza making process!</p>
 			
-			<iframe width="480" height="360" src="//www.youtube.com/embed/HWL__9yDu8I" frameborder="0" allowfullscreen></iframe>
+			<!--<iframe width="30%" height="20%" src="//www.youtube.com/embed/HWL__9yDu8I" frameborder="0" allowfullscreen></iframe>-->
+
 
 		
 
@@ -52,10 +42,7 @@
 			
 			</div>
 
-			<footer>
-				<p>&copy; 2013 Dawg Pizza</p>
-				<p>"Call us for delivery: 206-555-1212"</p>
-			</footer>
+			<!--#include virtual="inc/footer.html" -->
 		
 	
 
