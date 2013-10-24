@@ -10,8 +10,8 @@ body {
 }
 
 .logo {
-	height: 50px;
-	width: 50px;
+	height: 7%;
+	width: 7%;
 }
 
 .headcontent {
@@ -21,11 +21,12 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	border: thin solid white;
+
 }
 
 .description {
 	font-style: italic;
-	font-size: 26px;
+	font-size: 60%;
 	color: white;
 	margin: 0 auto;
 	border-top: thin dotted white;
@@ -39,7 +40,8 @@ h1 {
 	text-align: center;
 	font-family: 'Verdana';
 	font-weight: bold; 
-	font-size: 80px;
+	font-size: 200%;
+	
 
 }
 
@@ -75,8 +77,10 @@ nav a:hover {
 	background-color: gray;
 }
 
-.link:hover {
+
+a:hover {
 	text-decoration: underline;
+	
 }
 
 p {
@@ -85,9 +89,7 @@ p {
 	margin-right: 15px;
 
 }
-.main {
-	border: thin solid white;
-}
+
 
 .link {
 	color: black;
@@ -97,16 +99,18 @@ p {
 }
 
 footer {
-	margin-top: 200px;
+	width: 60%;
+	margin: 0 auto;
 	background-color: #A9A9A9;
 	color: white;
 	font-weight: bold;
 	border: thin solid white;
+	font-size: 75%;
 }
 
 .icon {
-	width: 50px;
-	height: 50px;
+	width: 5%;
+	height: 5%;
 	float: left;
 	margin-right: 15px;
 	
@@ -154,8 +158,8 @@ aside {
 
 .pizza {
 	float: left;
-	height: 300px;
-	width: 500px;
+	height: 30%;
+	width: 50%;
 	margin: 15px;
 }
 
@@ -167,8 +171,27 @@ aside {
 
 .counter {
 	float: right;
-	width: 500px;
-	height: 300px;
+	width: 15%0;
+	height: 10%;
+
 	border: medium solid black;
 	margin-right: 15px;
+}
+
+address {
+	margin-left: 15px;
+}
+
+
+
+/*defines styles for mobile screens*/
+@media screen and (max-width: 767px) {
+  		.headcontent {
+  			display:none;
+  		}
+
+  		body {
+  			font-size: 20px;
+  		}
+   }
 }

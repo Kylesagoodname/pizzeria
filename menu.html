@@ -4,9 +4,11 @@
 	<head>
 		<title>Dawg Pizza</title>
 		<meta charset="UTF-8">
+			<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 			<link rel="stylesheet" href="css/styles.css">
 			<link rel="shortcut icon" href="img/">
 			<meta name="author" content="yuasakyl">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="shortcut icon" href="img/logo.png">
 	</head>
 	<body>
@@ -25,7 +27,7 @@
 		</div>
 
 
-		<div class="main">
+		<div class="container">
 			<h2>DAWG PIZZA MENU</h2>
 
 
@@ -40,8 +42,9 @@
 
 				<p class="line">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
 
-
-				<p class="menu">Meat Pies:</p>
+				<div class="row">
+				<div class="col-md-6">
+				<p>Meat Pies:</p>
 					<dl>
 						<dt>Classic Pepperoni</dt>
 							<dd>Pepperoni and Mozzarella on our Spicy Tomato Sauce. $10/$13/$16</dd>
@@ -54,7 +57,9 @@
 						<dt>The Ultimate</dt>
 							<dd>Pepperoni, Bacon, Canadian Bacon, Chicken, Duck, Goose, and Ground Beef with Smoked Mozzarella on our Spicy Tomato Sauce. Add Venison or Elk for an extra $2!  $15/$19/$23</dd>
 					</dl>
-					<p class="menu">Vegetarian Pies:</p>
+				</div>
+					<div class="col-md-6">
+					<p>Vegetarian Pies:</p>
 						<dl>
 							<dt>Margherita</dt>
 								<dd>Mozzarella, Basil, Salt on an Olive Oil Base.  $10/$13/$16</dd>
@@ -67,26 +72,36 @@
 							<dt>Purple Monster</dt>
 								<dd>Roasted Eggplant and Cabbage stir fried in sesame oil on a rich Plum Sauce.  $11/$14/$17</dd>
 						</dl>
-					
+					</div>
+				</div>
+			
 
-			<p class="menu">Drinks:</p>
+			<div class="row">
+			<div class="col-md-12">
+			<p>Drinks:</p>
 				<ul>
 					<li>Coke, Diet Coke, Sprite, Root Beer, or Irn Bru by the can ($4)</li>
 					<li>Rainier Beer by the can ($4)</li>
 					<li>House Red Wine by the glass or bottle ($10/$40)</li>
 				</ul>
-			<img class="counter" src="img/order.jpg" alt="A picture of our order counter">
+			
 			<p class="menu">Dessert:</p>
 				<ul>
 					<li>Chocolate Gelato ($8)</li>
 					<li>Lemon Sorbet ($7)</li>
 					<li> Ricotta Cheese Cake ($10)</li>
 				</ul>
-
-			<footer>
+			</div>
+			</div>
+			</div>
+			<footer> 
 				<p>&copy; 2013 Dawg Pizza</p>
 				<p>"Call us for delivery: 206-555-1212"</p>
 			</footer>
-		</div>
+
+			<img class="counter" src="img/order.jpg" alt="A picture of our order counter">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	</body>
 </html>
