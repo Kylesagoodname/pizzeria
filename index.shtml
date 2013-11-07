@@ -12,34 +12,23 @@
 			<link rel="shortcut icon" href="img/logo.png">
 	</head>
 	<body>
+
+
 		<!--#include virtual="inc/header.html" -->
 
-		<div class="container">
-			
-			<iframe width="60%" height="100%" src="//www.youtube.com/embed/HWL__9yDu8I" frameborder="0" allowfullscreen></iframe>
-			<p>Check out this video if you're interested in our pizza making process!</p>
+        <div class="mainpic">
+			<img class="pizzapic" src="img/pizzapic.jpg" alt="A picture of our dawg pizza">
+			<h2 class="motto"><span>Awesome wood-fired pizza with fresh ingredients baked to order. <br> Come in and eat, or call us for delivery!</span></h2>
+		</div>	
 		
-			
-		
-			<address>
-			  <strong>Dawg Pizza</strong><br>
-			  <p><a href="https://www.google.com/maps/preview#!q=4306+University+Way+NE%2C+Seattle%2C+WA+98105&data=!4m15!2m14!1m13!1s0x5490148b39e7e851%3A0x47f43ebdd6cf2dfe!3m8!1m3!1d182450!2d-122.3420645!3d47.6130284!3m2!1i1745!2i814!4f13.1!4m2!3d47.6600368!4d-122.3128467"> 4306 University Way NE<br>
-			  Seattle, WA 98105<br></a></p>
-			  <abbr title="Phone">Phone:</abbr> (206)-555-1212
-			</address>
-
-			<p><strong>Our business hours:</strong> 10:00am to 11:00pm </p>
-
-			<p><strong>Days of Operation:</strong> Monday through Saturday.</p>
-		
-
-			<div class="media">
-				<p> <img class="icon" src="img/email.png" alt="A picture of an email icon"><a href="mailto:(dawgpizzaseattle@gmail.com)" class="link">Email Us</a></p>
-
-				<p><img class="icon" src="img/twitter.png" alt="A picture of a twitter icon"><a href="https://twitter.com/dawgpizza" class="link">Link to our Twitter feed!</a></p>
+			<div class="info">  
+				<p><strong>Phone:</strong>(206)-555-1212</p>
+				<p><strong>Our business hours:</strong> 10:00am to 11:00pm </p>
+				<p><strong>Days of Operation:</strong> Monday through Saturday.</p>
 			</div>
+		
 			
-		</div>
+
 			
 			<!--#include virtual="inc/footer.html" -->
 	

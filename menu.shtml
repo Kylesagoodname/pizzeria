@@ -10,86 +10,61 @@
 			<meta name="author" content="yuasakyl">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="shortcut icon" href="img/logo.png">
-	</head>
-	<body>
-		
-		<!--#include virtual="inc/header.html" -->
 
+					<!--#include virtual="inc/header.html" -->
 
-		<div class="container">
-			<h2>DAWG PIZZA MENU</h2>
-
-
-			<p class="menu">Pizzas: </p> 
-			<p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</p>
-				<ul>
-					<li>Small (12")</li>
-					<li>Medium (14")</li>
-					<li>Large (17")</li>
-
-				</ul>
-
-				<p class="line">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
+			<div class="content">
 
 				<div class="row">
-				<div class="col-md-6">
-				<p>Meat Pies:</p>
-					<dl>
-						<dt>Classic Pepperoni</dt>
-							<dd>Pepperoni and Mozzarella on our Spicy Tomato Sauce. $10/$13/$16</dd>
-						<dt>The Hawaiian</dt>
-							<dd>Canadian Bacon and Pineapple with Mozzarella on a rich Tomato Sauce.  $12/$14/$17</dd>
-						<dt>Duck, Duck, Goose</dt>
-							<dd>Roasted Duck and Goose with Bacon, Chestnuts on a rich Plum Sauce.  $15/$17/$19</dd>
-						<dt>The Bambi</dt>
-							<dd>Slow-cooked Venison with Red Cabbage on our famous Black Cherry Sauce.  $15/$17/$19</dd>
-						<dt>The Ultimate</dt>
-							<dd>Pepperoni, Bacon, Canadian Bacon, Chicken, Duck, Goose, and Ground Beef with Smoked Mozzarella on our Spicy Tomato Sauce. Add Venison or Elk for an extra $2!  $15/$19/$23</dd>
-					</dl>
-				</div>
-					<div class="col-md-6">
-					<p>Vegetarian Pies:</p>
-						<dl>
-							<dt>Margherita</dt>
-								<dd>Mozzarella, Basil, Salt on an Olive Oil Base.  $10/$13/$16</dd>
-							<dt>Veggie Madness</dt>
-								<dd>Mushroom, Black Olive, Onions, Roasted Garlic, Squash and Roasted Eggplant on our Spicy Tomato Sauce.  $11/$14/$17</dd>
-							<dt>Forest Floor</dt>
-								<dd>Three kinds of mushrooms with Mozzarella on a herb Tomato Sauce.  $11/$14/$17</dd>
-							<dt>Mr Green</dt>
-								<dd>Roasted Chicken with Romano on a Basil Pesto sauce. $13/$16/$19</dd>
-							<dt>Purple Monster</dt>
-								<dd>Roasted Eggplant and Cabbage stir fried in sesame oil on a rich Plum Sauce.  $11/$14/$17</dd>
-						</dl>
+					<div class="col-md-8">	
+						<h2 class='menu-title'>Pizzas</h2>
+						<div class="pizzaz"></div>
+					</div>
+				
+
+					<div class="col-md-4">
+						<h2 class='menu-title'>Drinks</h2>
+						<div class="drinkz"></div>	
+						<h2 class='menu-title'>Desserts</h2>
+						<div class="dessertz"></div>
 					</div>
 				</div>
-			
 
-			<div class="row">
-			<div class="col-md-12">
-			<p>Drinks:</p>
-				<ul>
-					<li>Coke, Diet Coke, Sprite, Root Beer, or Irn Bru by the can ($4)</li>
-					<li>Rainier Beer by the can ($4)</li>
-					<li>House Red Wine by the glass or bottle ($10/$40)</li>
-				</ul>
-			
+			<div class="template-pizza">
+				<h2 class= "name"></h2>
+				<p class="d"></p>
+				<p class="prices"></p>
+			</div>
 
-			<p class="menu">Dessert:</p>
-				<ul>
-					<li>Chocolate Gelato ($8)</li>
-					<li>Lemon Sorbet ($7)</li>
-					<li> Ricotta Cheese Cake ($10)</li>
-				</ul>
-				<img class="counter" src="img/order.jpg" alt="A picture of our order counter">
-			</div>
-			</div>
-			</div>
-			
+			<div class= "template-drinks">
+				<h2 class="name"></h2>
+				<p class="price"></p>
 
-			<!--#include virtual="inc/footer.html" -->
-		
+			</div>
+
+			<div class="template-dessert">
+				<h2 class="name"></h2>
+				<p class="price"></p>
+			</div>
+
+		</div>
+
+		<div class="navbar-bottom">
+				<p>&copy; 2013 Dawg Pizza</p>
+				<p>"Call us for delivery: 206-555-1212"</p>
+
+		</div>
+	
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		
+		
+
+		<!-- direct link to menu script -->
+		<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+		<!-- my own JavaScript file, which will use the menu data structure
+		    (replace file name with the name of your script file) -->
+		<script src="js/template.js"></script>
 	</body>
 </html>

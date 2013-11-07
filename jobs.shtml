@@ -13,16 +13,34 @@
 	</head>
 	<body>
 		<!--#include virtual="inc/header.html" -->
-
-
-		<div class="container">
+		
+		<div class="content">
 			<h2>Now Hiring!</h2>
-			<p>We're in need of several new employees to fill positions at our restaurant! Here's some of the positions that need to be filled:</p>
+			<div class="jobs">
+				<h2 class="news-header">Kitchen Staff</h2>
+				<p class="article"> 
+					Job Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
 
-			<ul>
-				<li>Kitchen Staff</li>
-				<li>Truck Drivers</li>
-			</ul>
+				<strong><p>Instructional video for prospective kitchen staff!</p></strong>
+				<iframe width="30%" height="100%" src="//www.youtube.com/embed/HWL__9yDu8I" frameborder="0" allowfullscreen></iframe>
+				<h2 class="news-header">Truck Drivers</h2>
+				<p class="article">
+					Job Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				
+			</div>
+			
 			
 		</div><!--ends container-->
 		
