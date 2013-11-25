@@ -5,7 +5,7 @@
 	font-family: 'calibri';
 	font-size: 60%;
 }
-.restart {
+.btn-danger, .btn-primary {
 	float: right;
 	font-size: 80%;
 	font-weight: bold;
