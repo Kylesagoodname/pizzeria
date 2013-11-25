@@ -22,7 +22,7 @@ function render(pizzas, template, container) {
       instance.find('.add-to-cart-s').attr('data-name', pizza.name);
       instance.find('.add-to-cart-m').attr('data-name', pizza.name);
       instance.find('.add-to-cart-l').attr('data-name', pizza.name);
-      
+
       instance.find('.add-to-cart-s').attr('data-price', pizza.prices[0]);
       instance.find('.add-to-cart-m').attr('data-price', pizza.prices[1]);
       instance.find('.add-to-cart-l').attr('data-price', pizza.prices[2]);
@@ -46,7 +46,6 @@ function renderdrinks(drinks, template, container) {
       instance.find('.name').html(drink.name); 
       instance.find('.price').html('$' + drink.price);
       
-      instance.find('.add-to-cart').attr('data-type', drink);
       instance.find('.add-to-cart').attr('data-name', drink.name);
       instance.find('.add-to-cart').attr('data-price', drink.price);
 
@@ -67,7 +66,6 @@ function renderdessert(desserts, template, container) {
       instance.find('.name').html(dessert.name); 
      
       instance.find('.price').html('$' + dessert.price);
-      instance.find('.add-to-cart').attr('data-type', dessert);
       instance.find('.add-to-cart').attr('data-name', dessert.name);
       instance.find('.add-to-cart').attr('data-price', dessert.price);
       instance.removeClass('template');

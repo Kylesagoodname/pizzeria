@@ -4,11 +4,13 @@
     var cart = {
         name: null,
         address1: null,
+        address2: null,
         zip: null,
         phone: null,
         items: [] //empty array
     }; //cart data
 
+    var total;
 //doc ready function
 $(function(){
 
@@ -39,29 +41,63 @@ $(function(){
     });
 
     
-
-    $('.place-order').click(function(){
-        alert("this is working");
-        //TODO: validate the cart to make sure all the required
-        //properties have been filled out, and that the 
-        //total order is greater than $20 (see homework 
-        //instructions) 
-
-        postCart(cart, $('.cart-form'));
+    //fills the cart with the information from the form
+    $('.cartform').submit(function(){
+        
+        var signupForm = $(this);
+        var addr1Input = signupForm.find('input[name="addr-1"]');
+        var addr1Value = addr1Input.val();
+        cart.address1 = addr1Value;
+        var addr2Input = signupForm.find('input[name="addr-2"]');
+        var addr2Value = addr2Input.val();
+        cart.address2 = addr2Value;
+        var nameInput = signupForm.find('input[name="first-name"]');
+        var nameValue = nameInput.val();
+        cart.name = nameValue;
+        var zipInput = signupForm.find('input[name="zip"]');
+        var zipValue = zipInput.val();
+        cart.zip = zipValue;
+        var phoneInput = signupForm.find('input[name="phone"]');
+        var phoneValue = phoneInput.val();
+        cart.phone = phoneValue;
+        if(addr1Value && total > 20) {
+            postCart(cart, $('.cartform'));
+            return true;
+        } else {
+            alert("Please fill out all fields and order at least 20 dollars worth of food.")
+            return false;
+        }
+         
     });
 
 }); //doc ready
 
 
-
+//removeItem()
+//removes an item from the shopping cart
+//rerenders the cart after removing
 function removeItem() {
-
-            //alert("alibababab");
             
             var idxToRemove = $('.remove-from-cart').attr('data-index');
             
             cart.items.splice(idxToRemove, 1);
             renderCart(cart, $('.template-cart'), $('.cart-container'));
+}
+
+//startOver()
+//lets the user clear shopping cart and input fields
+//rerenders the cart 
+function startOver() {
+    cart = {
+        name: null,
+        address1: null,
+        address2: null,
+        zip: null,
+        phone: null,
+        items: [] //empty array
+    }; //cart data
+
+    renderCart(cart, $('.template-cart'), $('.cart-container'));
 }
 
 // renderCart()
@@ -75,7 +111,9 @@ function renderCart(cart, template, container) {
     
     //empty the container of whatever is there currently
     container.empty();
-    var total = 0;
+    var subtotal = 0;
+    total = 0;
+    var tax = .095;
     //for each item in the cart...
     for (idx = 0; idx < cart.items.length; ++idx) {
         item = cart.items[idx];
@@ -87,19 +125,23 @@ function renderCart(cart, template, container) {
         instance.find('.remove-from-cart').attr('data-index', idx);
         instance.find('.remove-from-cart').attr('data-price', item.price);
 
-        total = total + Number(item.price);
+        subtotal = subtotal + Number(item.price);
         instance.removeClass('template');
         container.append(instance[idx]);
 
-        //TODO: code to render the cart item
-    } //for each cart item
-    
+        
+    } 
+    tax = subtotal * tax;
+    tax = Math.round(tax * 100) / 100;
+    total = total + tax + subtotal;
+    $('.subtotal').empty();
+    $('.subtotal').append("Subtotal: $" + subtotal);
+    $('.tax').empty();
+    $('.tax').append("Tax: $" + tax);
     $('.total').empty();
     $('.total').append("Total: $" + total);
 
-    //TODO: code to render sub-total price of the cart
-    //the tax amount (see instructions), 
-    //and the grand total
+   
 
 } //renderCart()
 

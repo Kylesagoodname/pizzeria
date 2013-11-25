@@ -14,7 +14,85 @@
 					<!--#include virtual="inc/header.html" -->
 
 			<div class="content">
+				<div class="page-header">
+                <h1>Order Page</h1>                
+                <p class="lead">Don't feeling like getting out of the house? We'll come to you!</p>
+                <p class="note">Note: We deliver only within the Seattle city limits, and only from noon to 11:00pm. We accept cash or credit on delivery.</p>                
+            </div>
 
+            <form method="POST" action="http://dawgpizza.com/orders/" class="form-horizontal cartform" role="form">
+
+            
+
+
+                <div class="form-group">
+                    <label class="col-lg-2 control-label" for="first-name">Name</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control" name="first-name" id="first-name" placeholder="enter full name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-2 control-label" for="addr-1">Address</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control" name="addr-1" id="addr-1" placeholder="street address">
+                        <input type="text" class="form-control" name="addr-2">
+                        <input type="text" class="form-control" name="addr-3">
+                    </div>
+                </div>
+
+               
+                <div class="form-group">
+                    <label class="col-lg-2 control-label" for="zip">Zip Code</label>
+                    <div class="col-lg-8">
+                        <input type="text" class="form-control" name="zip" id="email" placeholder="zip code" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-2 control-label" for="phone">Phone</label>
+                    <div class="col-lg-8">
+                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="primary phone number" required>
+                    </div>
+                </div>
+
+                <input type="hidden" class="form-control" name="cart" id="phone" placeholder="primary phone number">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<button class="restart" onclick="startOver()">Start Over</button>
 				<div class="row">
 					<div class="col-md-8">	
 						<h2 class='menu-title'>Pizzas</h2>
@@ -30,6 +108,8 @@
 						<h2 class='cart-title'>Shopping Cart</h2>
 						<div class="cart-container"></div>
 
+						<div class="subtotal"></div>
+						<div class="tax"></div>
 						<div class="total"></div>	
 					</div>
 				</div>
@@ -40,26 +120,26 @@
 				<h2 class= "name"></h2>
 				<p class="d"></p> <br>
 				<p class="price-small"></p> 
-				<button class="add-to-cart-s" type="button" data-type="pizza" data-name="" data-size="s" data-price="">Add to Cart</button>
+				<button class="add-to-cart-s" type="button" data-type="pizza" data-name="" data-size="small" data-price="">Add to Cart</button>
 
 				<p class="price-medium"></p>
-				<button class="add-to-cart-m" type="button" data-type="pizza" data-name="" data-size="m" data-price="">Add to Cart</button>
+				<button class="add-to-cart-m" type="button" data-type="pizza" data-name="" data-size="medium" data-price="">Add to Cart</button>
 
 				<p class="price-large"></p>
-				<button class="add-to-cart-l" type="button" data-type="pizza" data-name="" data-size="l" data-price="">Add to Cart</button>
+				<button class="add-to-cart-l" type="button" data-type="pizza" data-name="" data-size="large" data-price="">Add to Cart</button>
 				
 			</div>
 
 			<div class= "template-drinks">
 				<h2 class="name"></h2>
 				<p class="price"></p>
-				<button class="add-to-cart" type="button" data-type="" data-name="" data-price="">Add to Cart</button>
+				<button class="add-to-cart" type="button" data-type="drink" data-name="" data-price="">Add to Cart</button>
 			</div>
 
 			<div class="template-dessert">
 				<h2 class="name"></h2>
 				<p class="price"></p>
-				<button class="add-to-cart" type="button" data-type="" data-name="" data-price="">Add to Cart</button>
+				<button class="add-to-cart" type="button" data-type="dessert" data-name="" data-price="">Add to Cart</button>
 			</div>
 
 			<div class="template-cart">
@@ -70,6 +150,7 @@
 
 		</div> <!--ends templates div-->
 
+		<button type="submit" class="btn btn-primary">Checkout</button>
 		</div> <!--container div-->
 
 
