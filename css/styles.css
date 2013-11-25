@@ -1,8 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
 @import url(reset.css);
 
+.add-to-cart {
+	display: inline;
+	font-size: 60%;
 
+}
 
+.templates {
+	display: none;
+}
 body {
     background-image: url(../img/wild_oliva.png);
     font-family: 'calibri', sans-serif;
@@ -22,6 +29,7 @@ h2 span {
    background: rgba(0, 0, 0, 0.7);
    padding: 10px; 
 }
+
 
 .mainpic {
 	position: relative;
@@ -62,7 +70,19 @@ h2 span {
 	font-family: 'courier new';
 }
 
-.prices {
+.price-small {
+	display: inline;
+	font-size: 60%;
+	font-family: 'courier new';
+}
+
+.price-medium {
+	display: inline;
+	font-size: 60%;
+	font-family: 'courier new';
+}
+
+.price-large {
 	display: inline;
 	font-size: 60%;
 	font-family: 'courier new';

@@ -14,51 +14,61 @@
 					<!--#include virtual="inc/header.html" -->
 
 			<div class="content">
-				<h1>Menu</h1>
+
 				<div class="row">
 					<div class="col-md-8">	
 						<h2 class='menu-title'>Pizzas</h2>
 						<div class="pizzaz"></div>
-						
-					</div>
-				
-
-					<div class="col-md-4">
 						<h2 class='menu-title'>Drinks</h2>
 						<div class="drinkz"></div>	
 						<h2 class='menu-title'>Desserts</h2>
 						<div class="dessertz"></div>
-						
+					</div>
+				
+
+					<div class="col-md-4">
+						<h2 class='cart-title'>Shopping Cart</h2>
+						<div class="cart-container"></div>
+
+						<div class="total"></div>	
 					</div>
 				</div>
 
 
-		
+		<div class="templates">
 			<div class="template-pizza">
 				<h2 class= "name"></h2>
-				<p class="d"></p>
-				<p class="price-small"></p>
+				<p class="d"></p> <br>
+				<p class="price-small"></p> 
+				<button class="add-to-cart-s" type="button" data-type="pizza" data-name="" data-size="s" data-price="">Add to Cart</button>
+
 				<p class="price-medium"></p>
+				<button class="add-to-cart-m" type="button" data-type="pizza" data-name="" data-size="m" data-price="">Add to Cart</button>
+
 				<p class="price-large"></p>
-				
+				<button class="add-to-cart-l" type="button" data-type="pizza" data-name="" data-size="l" data-price="">Add to Cart</button>
 				
 			</div>
 
 			<div class= "template-drinks">
 				<h2 class="name"></h2>
 				<p class="price"></p>
-				
+				<button class="add-to-cart" type="button" data-type="" data-name="" data-price="">Add to Cart</button>
 			</div>
 
 			<div class="template-dessert">
 				<h2 class="name"></h2>
 				<p class="price"></p>
-				
+				<button class="add-to-cart" type="button" data-type="" data-name="" data-price="">Add to Cart</button>
 			</div>
 
-			
+			<div class="template-cart">
+	            <p class="name"></p> 
+				<p class="price"></p> 
+				<button class="remove-from-cart" type="button" data-index="" data-price="" onclick="removeItem()">Remove</button>
+			</div>
 
-		
+		</div> <!--ends templates div-->
 
 		</div> <!--container div-->
 
